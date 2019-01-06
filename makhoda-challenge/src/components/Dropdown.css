@@ -15,10 +15,31 @@
 	width: 300px;
 }
 
+.dropdown-display {
+	overflow: hidden;
+}
+
+.dropdown-display span {
+	float: left;
+	padding: 10px;
+}
+
+.dropdown-display i {
+	float: right;
+	font-size: 17px;
+	line-height: 33px;
+	margin-right: 12px;
+}
+
 .dropdown-container--opened .dropdown-display {
 	background: #151515;
 }
 
-.dropdown-list span {
+.dropdown-list .dropdown-list__item {
 	display: block;
+	padding: 5px 10px;
+}
+
+.dropdown-list .dropdown-list__item:hover {
+	background: #1b1b1b;
 }

@@ -50,7 +50,11 @@ class Dropdown extends Component {
 					style={{ display: this.state.showItems ? "block" : "none" }}
 				>
 					{nonSelected.map(item => (
-						<span key={item.id} onClick={() => this.handleSelectItem(item)}>
+						<span
+							className="dropdown-list__item"
+							key={item.id}
+							onClick={() => this.handleSelectItem(item)}
+						>
 							{item.text}
 						</span>
 					))}
