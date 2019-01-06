@@ -1,0 +1,30 @@
+.button-container {
+	border-left: 1px solid #1e1e1e;
+	border-right: 1px solid #1e1e1e;
+	float: left;
+	overflow: hidden;
+}
+
+.button-container.right {
+	margin-right: 10%;
+}
+
+.button-container label {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.button-icon {
+	float: left;
+	line-height: 17px;
+	padding: 20px 10px;
+}
+
+.button-icon:hover * {
+	color: var(--font-colour);
+}
+
+.button-container i {
+	width: 100%;
+	font-size: 17px;
+}

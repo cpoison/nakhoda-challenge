@@ -1,0 +1,24 @@
+.dropdown-container {
+	max-width: 300px;
+	border: 0;
+	border-radius: 14px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.dropdown-container--opened {
+	box-shadow: 0px 0px 15px 3px #171717;
+}
+
+.dropdown-list {
+	display: block;
+	width: 300px;
+}
+
+.dropdown-container--opened .dropdown-display {
+	background: #151515;
+}
+
+.dropdown-list span {
+	display: block;
+}
