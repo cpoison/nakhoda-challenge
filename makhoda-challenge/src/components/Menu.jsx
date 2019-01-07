@@ -6,7 +6,10 @@ const Menu = props => {
 			<ul>
 				{props.list.map(item => (
 					<li key={item.text}>
-						<a href="#" className={item.selected ? "selected" : ""}>
+						<a
+							href={`#${item.text}`}
+							className={item.selected ? "selected" : ""}
+						>
 							{item.text}
 						</a>
 					</li>
