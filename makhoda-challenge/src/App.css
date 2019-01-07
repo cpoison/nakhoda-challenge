@@ -73,6 +73,15 @@ a.selected {
 	float: right;
 }
 
+.user-dropdown {
+	margin-right: 90px;
+}
+
+.user-dropdown i {
+	margin-left: 10px;
+	color: var(--font-colour);
+}
+
 .user-login {
 	background: #424242;
 	border: 0;

@@ -5,11 +5,8 @@ import Menu from "./components/Menu";
 import "./reset.css";
 import "./App.css";
 
-/* <i class="fas fa-trash"></i> */
-/* <i class="fas fa-toggle-on"></i> */
-/* <i class="fas fa-envelope"></i> */
-
 const buttonsList1 = [{ label: "Beatae Vita", icon: "-chevron-circle-down" }];
+
 const buttonsList2 = [
 	{ label: "Archieto", icon: "-trash" },
 	{ label: "Aperiam", icon: "-toggle-on" },
@@ -92,10 +89,10 @@ class App extends Component {
 						CSed ut perspiciatis unde
 					</h1>
 					<p className="main-container__intro">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-						ducimus explicabo quod ullam quam autem nam rem obcaecati nihil
-						omnis maiores, totam numquam aut veritatis soluta fugiat harum neque
-						dolores.
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, aeque ipsa
+						quae ab illo inventore veritatis et quasi architecto beatae vitae
+						dicta sunt explicabo.
 					</p>
 
 					<Dropdown list={dropdownList} />
