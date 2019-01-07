@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ButtonIconsList from "./components/ButtonIconsList";
 import Dropdown from "./components/Dropdown";
+import Menu from "./components/Menu";
 import "./reset.css";
 import "./App.css";
 
@@ -16,46 +17,46 @@ const buttonsList2 = [
 	{ label: "Rem", icon: "-envelope" }
 ];
 
+const menuItems = [
+	{ text: "Inste Natus", selected: false },
+	{ text: "Explicabo", selected: false },
+	{ text: "Omnis", selected: false },
+	{ text: "Ipsa quae", selected: false },
+	{ text: "Percitiatis Unde", selected: true }
+];
+
 const dropdownList = [
 	{
 		id: 1,
-		text: "Accusantium doloremque laudant",
-		selected: true
+		text: "Accusantium doloremque laudant"
 	},
 	{
 		id: 2,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	},
 	{
 		id: 3,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	},
 	{
 		id: 4,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	},
 	{
 		id: 5,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	},
 	{
 		id: 6,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	},
 	{
 		id: 7,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	},
 	{
 		id: 8,
-		text: "Architecto beatae vitae",
-		selected: false
+		text: "Architecto beatae vitae"
 	}
 ];
 
@@ -65,27 +66,7 @@ class App extends Component {
 			<div className="App">
 				<header className="">
 					<div className="top-bar">
-						<nav className="menu">
-							<ul>
-								<li>
-									<a href="#">Inste Natus</a>
-								</li>
-								<li>
-									<a href="#">Explicabo</a>
-								</li>
-								<li>
-									<a href="#">Omnis</a>
-								</li>
-								<li>
-									<a href="#">Ipsa quae</a>
-								</li>
-								<li>
-									<a href="#" className="selected">
-										Percitiatis Unde
-									</a>
-								</li>
-							</ul>
-						</nav>
+						<Menu list={menuItems} />
 						<div className="user-options">
 							<button type="button" className="user-dropdown">
 								<span>Veris Veritatis</span>
